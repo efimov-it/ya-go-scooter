@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "YandexText";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-black.woff") format("woff"), url("https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff") format("woff"), url("https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: YandexText, sans-serif;
+  color: #21201F;
+}/*# sourceMappingURL=main.css.map */
