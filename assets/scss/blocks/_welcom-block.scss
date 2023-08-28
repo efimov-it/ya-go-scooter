@@ -1,15 +1,14 @@
 .welcome-block {
-    // opacity: 0.22;
     background: linear-gradient(180deg, rgba(238, 229, 255, 0.00) 0%, #FFF 100%),
                 linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%),
                 linear-gradient(90deg, rgba(255, 92, 77, 0.2) 0%, rgba(235, 70, 159, 0.2) 25%, rgba(131, 65, 239, 0.2) 72.00%, rgba(63, 104, 249, 0.2) 100%);
     
-    margin-bottom: vw(280px, 375px);
-    padding-top: vw(32px, 744px);
-    padding-bottom: vw(38px, 744px);
+    margin-bottom: vw(300px, 375px);
+    padding-top: vw(32px, 375px);
+    padding-bottom: vw(38px, 375px);
 
     @media screen and (min-width: 526px) {
-        margin-bottom: vw(540px, 744px);
+        margin-bottom: vw(570px, 744px);
         padding-top: vw(32px, 744px);
         padding-bottom: vw(38px, 744px);
     }
@@ -230,7 +229,7 @@
         animation: rotate 10s linear 0s infinite;
 
         left: vw(208px, 744px);
-        top: vw(879px, 744px);
+        top: vw(883px, 744px);
 
         @media screen and (min-width: 526px) {
             left: vw(205px, 744px);

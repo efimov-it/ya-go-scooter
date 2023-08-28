@@ -102,13 +102,13 @@ body {
 
 .welcome-block {
   background: linear-gradient(180deg, rgba(238, 229, 255, 0) 0%, #FFF 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgba(255, 92, 77, 0.2) 0%, rgba(235, 70, 159, 0.2) 25%, rgba(131, 65, 239, 0.2) 72%, rgba(63, 104, 249, 0.2) 100%);
-  margin-bottom: 74.6666666667vw;
-  padding-top: 4.3010752688vw;
-  padding-bottom: 5.1075268817vw;
+  margin-bottom: 80vw;
+  padding-top: 8.5333333333vw;
+  padding-bottom: 10.1333333333vw;
 }
 @media screen and (min-width: 526px) {
   .welcome-block {
-    margin-bottom: 72.5806451613vw;
+    margin-bottom: 76.6129032258vw;
     padding-top: 4.3010752688vw;
     padding-bottom: 5.1075268817vw;
   }
@@ -335,7 +335,7 @@ body {
   z-index: 0;
   animation: rotate 10s linear 0s infinite;
   left: 27.9569892473vw;
-  top: 118.1451612903vw;
+  top: 118.6827956989vw;
 }
 @media screen and (min-width: 526px) {
   .welcome-block_text-image {
@@ -476,6 +476,24 @@ body {
   }
 }
 
+.advantages-block {
+  margin-bottom: 19.2vw;
+}
+@media screen and (min-width: 526px) {
+  .advantages-block {
+    margin-bottom: 17.2043010753vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .advantages-block {
+    margin-bottom: 8.8888888889vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .advantages-block {
+    margin-bottom: 128px;
+  }
+}
 .advantages-block_title {
   font-weight: 900;
   line-height: 100%;

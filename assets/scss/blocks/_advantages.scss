@@ -1,16 +1,16 @@
 .advantages-block {
-
+    margin-bottom: vw(72px, 375px);
 
     @media screen and (min-width: 526px) {
-        
+        margin-bottom: vw(128px, 744px);
     }
     
     @media screen and (min-width: 921px) {
-        
+        margin-bottom: vw(128px);
     }
     
     @media screen and (min-width: 1441px) {
-        
+        margin-bottom: 128px;
     }
     
     &_title {
