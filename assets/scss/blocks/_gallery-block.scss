@@ -1,5 +1,7 @@
 .gallery-block {
     position: relative;
+    overflow-x: hidden;
+    width: 100%;
 
     margin-bottom: vw(72px, 375px);
 
@@ -8,6 +10,7 @@
     }
 
     @media screen and (min-width: 921px) {
+        overflow: visible;
         margin-bottom: vw(105px);
     }
 
@@ -22,7 +25,6 @@
         @media screen and (min-width: 526px) {
             font-size: vw(48px, 744px);
             letter-spacing: vw(-0.96px, 744px);
-            max-height: vw(82px, 744px);
             margin-bottom: vw(48px, 744px);
         }
 
@@ -48,17 +50,20 @@
         font-size: vw(16px, 375px);
         width: 100%;
         max-height: vw(125px, 375px);
+        margin-bottom: vw(60px, 375px);
 
         @media screen and (min-width: 526px) {
             font-size: vw(24px, 744px);
             width: vw(442px, 744px);
             max-height: vw(191px, 744px);
+            margin-bottom: vw(60px, 744px);
         }
 
         @media screen and (min-width: 921px) {
             font-size: vw(24px);
             width: vw(442px);
             max-height: vw(191px);
+            margin-bottom: 0px;
         }
 
         @media screen and (min-width: 1441px) {
@@ -69,6 +74,68 @@
     }
     
     &_gallery {
+        margin-bottom: vw(24px, 375px);
+
+        @media screen and (min-width: 526px) {
+            margin-bottom: vw(24px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            margin-bottom: 0px;
+        }
+
+        @media screen and (min-width: 1441px) {
+
+        }
+    }
+
+    &_controls {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        gap: vw(12px, 375px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(12px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            display: none;
+        }
+    }
+        
+    &_control-button {
+        background: #FFDE40;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: vw(48px, 375px);
+        height: vw(48px, 375px);
+        border-radius: vw(24px, 375px);
+
+        transition: opacity 0.3s ease-in-out;
+
+        @media screen and (min-width: 526px) {
+            width: vw(48px, 744px);
+            height: vw(48px, 744px);
+            border-radius: vw(24px, 744px);
+        }
+
+        &:disabled {
+            opacity: 0.5;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+        
+    &_control-icon {
+        
 
         @media screen and (min-width: 526px) {
 
@@ -79,11 +146,26 @@
         }
 
         @media screen and (min-width: 1441px) {
+            
+        }
 
+        &__left {
+            transform: rotate(180deg);
+
+
+            @media screen and (min-width: 526px) {
+
+            }
+
+            @media screen and (min-width: 921px) {
+
+            }
+
+            @media screen and (min-width: 1441px) {
+                
+            }
         }
     }
-
-    
 
     &_decor {
         position: absolute;
@@ -104,12 +186,16 @@
 
         &__1 {
 
+            left: vw(224px, 375px);
+            top: vw(200px, 375px);
 
             @media screen and (min-width: 526px) {
-
+                left: vw(450px, 744px);
+                top: vw(336px, 744px);
             }
         
             @media screen and (min-width: 921px) {
+                right: auto;
                 left: calc(50% + #{vw(284px)});
                 top: vw(40px);
             }
@@ -120,9 +206,12 @@
             }
 
             img {
+                width: vw(186px, 375px);
+                height: vw(186px, 375px);
 
                 @media screen and (min-width: 526px) {
-
+                    width: vw(364px, 744px);
+                    height: vw(364px, 744px);
                 }
             
                 @media screen and (min-width: 921px) {
@@ -204,34 +293,51 @@
 }
 
 .gallery {
+    overflow: hidden;
+    overflow-x: auto;
+    
+    width: 100vw;
+    transform: translateX(vw(-32px, 375px));
 
     @media screen and (min-width: 526px) {
-
+        width: 100vw;
+        transform: translateX(vw(-32px, 744px));
     }
 
     @media screen and (min-width: 921px) {
-
+        width: auto;
+        transform: none;
+        overflow: visible;
     }
 
     @media screen and (min-width: 1441px) {
         
     }
 
-    &_track {
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
+    &_track {
+        width: max-content;
+        display: flex;
+        flex-direction: row;
+
+        gap: vw(16px, 375px);
+        padding: 0px vw(16px, 375px);
 
         @media screen and (min-width: 526px) {
-
+            gap: vw(16px, 744px);
+            padding: 0px vw(16px, 744px);
         }
     
         @media screen and (min-width: 921px) {
-            display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
             gap: vw(23px);
             width: vw(935px);
             transform: rotate(2deg) translateY(vw(-130px));
             margin-bottom: vw(180px);
+            padding: 0px;
         }
     
         @media screen and (min-width: 1441px) {
@@ -258,14 +364,17 @@
         }
 
         img {
-
+            width: vw(343px, 375px);
+            height: vw(343px, 375px);
+            border-radius: vw(48px, 375px);
             
             @media screen and (min-width: 526px) {
-
+                width: vw(712px, 744px);
+                height: vw(712px, 744px);
+                border-radius: vw(92px, 744px);
             }
 
             @media screen and (min-width: 921px) {
-                // transform: rotate(2deg);
                 width: vw(456px);
                 height: vw(456px);
                 border-radius: vw(64px);
@@ -280,12 +389,10 @@
 
         &:nth-child(2n-1) img {
             @media screen and (min-width: 921px) {
-                // transform: rotate(2deg) translateY(vw(210px));
                 transform: translateY(vw(210px));
             }
 
             @media screen and (min-width: 1441px) {
-                // transform: rotate(2deg) translateY(210px);
                 transform: translateY(210px);
             }
         }

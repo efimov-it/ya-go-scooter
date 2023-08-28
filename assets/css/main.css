@@ -623,6 +623,8 @@ body {
 
 .gallery-block {
   position: relative;
+  overflow-x: hidden;
+  width: 100%;
   margin-bottom: 19.2vw;
 }
 @media screen and (min-width: 526px) {
@@ -632,6 +634,7 @@ body {
 }
 @media screen and (min-width: 921px) {
   .gallery-block {
+    overflow: visible;
     margin-bottom: 7.2916666667vw;
   }
 }
@@ -648,7 +651,6 @@ body {
   .gallery-block_title {
     font-size: 6.4516129032vw;
     letter-spacing: -0.1290322581vw;
-    max-height: 11.0215053763vw;
     margin-bottom: 6.4516129032vw;
   }
 }
@@ -674,12 +676,14 @@ body {
   font-size: 4.2666666667vw;
   width: 100%;
   max-height: 33.3333333333vw;
+  margin-bottom: 16vw;
 }
 @media screen and (min-width: 526px) {
   .gallery-block_text {
     font-size: 3.2258064516vw;
     width: 59.4086021505vw;
     max-height: 25.6720430108vw;
+    margin-bottom: 8.064516129vw;
   }
 }
 @media screen and (min-width: 921px) {
@@ -687,6 +691,7 @@ body {
     font-size: 1.6666666667vw;
     width: 30.6944444444vw;
     max-height: 13.2638888889vw;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1441px) {
@@ -696,13 +701,81 @@ body {
     max-height: 191px;
   }
 }
+.gallery-block_gallery {
+  margin-bottom: 6.4vw;
+}
+@media screen and (min-width: 526px) {
+  .gallery-block_gallery {
+    margin-bottom: 3.2258064516vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .gallery-block_gallery {
+    margin-bottom: 0px;
+  }
+}
+.gallery-block_controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2vw;
+}
+@media screen and (min-width: 526px) {
+  .gallery-block_controls {
+    gap: 1.6129032258vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .gallery-block_controls {
+    display: none;
+  }
+}
+.gallery-block_control-button {
+  background: #FFDE40;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.8vw;
+  height: 12.8vw;
+  border-radius: 6.4vw;
+  transition: opacity 0.3s ease-in-out;
+}
+@media screen and (min-width: 526px) {
+  .gallery-block_control-button {
+    width: 6.4516129032vw;
+    height: 6.4516129032vw;
+    border-radius: 3.2258064516vw;
+  }
+}
+.gallery-block_control-button:disabled {
+  opacity: 0.5;
+}
+.gallery-block_control-button:active {
+  opacity: 0.3;
+}
+.gallery-block_control-icon__left {
+  transform: rotate(180deg);
+}
 .gallery-block_decor {
   position: absolute;
   top: 0px;
   left: 0px;
 }
+.gallery-block_decor__1 {
+  left: 59.7333333333vw;
+  top: 53.3333333333vw;
+}
+@media screen and (min-width: 526px) {
+  .gallery-block_decor__1 {
+    left: 60.4838709677vw;
+    top: 45.1612903226vw;
+  }
+}
 @media screen and (min-width: 921px) {
   .gallery-block_decor__1 {
+    right: auto;
     left: calc(50% + 19.7222222222vw);
     top: 2.7777777778vw;
   }
@@ -711,6 +784,16 @@ body {
   .gallery-block_decor__1 {
     left: calc(50% + 284px);
     top: 40px;
+  }
+}
+.gallery-block_decor__1 img {
+  width: 49.6vw;
+  height: 49.6vw;
+}
+@media screen and (min-width: 526px) {
+  .gallery-block_decor__1 img {
+    width: 48.9247311828vw;
+    height: 48.9247311828vw;
   }
 }
 @media screen and (min-width: 921px) {
@@ -782,15 +865,50 @@ body {
   }
 }
 
+.gallery {
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100vw;
+  transform: translateX(-8.5333333333vw);
+}
+@media screen and (min-width: 526px) {
+  .gallery {
+    width: 100vw;
+    transform: translateX(-4.3010752688vw);
+  }
+}
+@media screen and (min-width: 921px) {
+  .gallery {
+    width: auto;
+    transform: none;
+    overflow: visible;
+  }
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery_track {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 4.2666666667vw;
+  padding: 0px 4.2666666667vw;
+}
+@media screen and (min-width: 526px) {
+  .gallery_track {
+    gap: 2.1505376344vw;
+    padding: 0px 2.1505376344vw;
+  }
+}
 @media screen and (min-width: 921px) {
   .gallery_track {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 1.5972222222vw;
     width: 64.9305555556vw;
     transform: rotate(2deg) translateY(-9.0277777778vw);
     margin-bottom: 12.5vw;
+    padding: 0px;
   }
 }
 @media screen and (min-width: 1441px) {
@@ -799,6 +917,18 @@ body {
     width: 935px;
     transform: rotate(2deg) translateY(-130px);
     margin-bottom: 180px;
+  }
+}
+.gallery_image img {
+  width: 91.4666666667vw;
+  height: 91.4666666667vw;
+  border-radius: 12.8vw;
+}
+@media screen and (min-width: 526px) {
+  .gallery_image img {
+    width: 95.6989247312vw;
+    height: 95.6989247312vw;
+    border-radius: 12.3655913978vw;
   }
 }
 @media screen and (min-width: 921px) {
