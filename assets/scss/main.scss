@@ -32,7 +32,8 @@ $main-font: #21201F;
 }
 
 body {
-    overflow-x: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;    
 }
 
 .section {
@@ -110,5 +111,5 @@ body {
 @import 'blocks/welcom-block';
 @import 'blocks/advantages';
 
-
+@import 'blocks/offer-blocks';
 @import 'blocks/footer';
