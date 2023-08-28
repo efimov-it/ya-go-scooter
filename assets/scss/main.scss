@@ -32,7 +32,8 @@ $main-font: #21201F;
 }
 
 body {
-    overflow-x: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;    
 }
 
 .section {
