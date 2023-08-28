@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     if (gallery && galleryLeftBtn && galleryRightBtn) {
         
-        let autoScroll = false;
-        let timeOutCodes = [];
+        let isScrolling = false;
         let currentSlideIndex = 0;
         let slidesCount = gallery.children[0].children.length;
 
@@ -20,37 +19,19 @@ document.addEventListener('DOMContentLoaded', function () {
             goToSlide(++currentSlideIndex);
         }
 
-        gallery.onscroll = function (e) {
-            scrollEndDetector++;
-            
-            timeOutCodes.push(
-                setTimeout(function () {
-                    if (scrollEndDetector !== 0) {
-                        detectScroolEnd(scrollEndDetector);
-                    }
-                },
-            300));
-        }
-
-        function detectScroolEnd (detectorValue) {
-            if (detectorValue === scrollEndDetector) {    
-                timeOutCodes.forEach(tocode => {
-                    clearTimeout(tocode);
-                });
-                timeOutCodes = [];
-
-                scrollEndDetector = 0;
-                onScrollEnd();
+        gallery.onscroll = function() {
+        isScrolling = true;
+        clearTimeout(window.scrollEndTimer);
+        
+        window.scrollEndTimer = setTimeout(function() {
+            if (isScrolling) {
+            isScrolling = false;
+            onScrollEnd();
             }
-        }
+        }, 250);
+        };
 
         function onScrollEnd () {
-            console.log(123);
-            if (autoScroll) {
-                autoScroll = false;
-                return false;
-            }
-
             const currentScrollLeft = gallery.scrollLeft;
             
             const slideWidth = gallery.children[0].children[0].offsetWidth;
@@ -80,8 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const slideWidth = gallery.children[0].children[0].offsetWidth;
             const slidesGap = (gallery.children[0].offsetWidth - (slideWidth * slidesCount)) / (slidesCount + 1);
-
-            autoScroll = true;
 
             gallery.scrollTo({
                 left: slideIndex * slideWidth + (slideIndex) * slidesGap,
