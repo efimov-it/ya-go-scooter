@@ -18,21 +18,16 @@
 }
 .welcome-block {
   background: linear-gradient(180deg, rgba(238, 229, 255, 0) 0%, #FFF 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%), linear-gradient(90deg, rgba(255, 92, 77, 0.2) 0%, rgba(235, 70, 159, 0.2) 25%, rgba(131, 65, 239, 0.2) 72%, rgba(63, 104, 249, 0.2) 100%);
-  padding: 8.5333333333vw 8.5333333333vw 10.1333333333vw;
+  margin-bottom: 74.6666666667vw;
 }
 @media screen and (min-width: 526px) {
   .welcome-block {
-    padding: 4.3010752688vw 4.3010752688vw 5.1075268817vw;
+    margin-bottom: 72.5806451613vw;
   }
 }
 @media screen and (min-width: 921px) {
   .welcome-block {
-    padding: 8.6111111111vw calc(50% - 31.8055555556vw);
-  }
-}
-@media screen and (min-width: 1441px) {
-  .welcome-block {
-    padding: 124px calc(50% - 458px);
+    margin-bottom: 0px;
   }
 }
 .welcome-block_logo {
@@ -385,6 +380,132 @@
   }
 }
 
+.advantages-block_title {
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -1.12px;
+  font-size: 8.5333333333vw;
+  max-height: 14.6666666667vw;
+  margin-bottom: 8.5333333333vw;
+}
+@media screen and (min-width: 526px) {
+  .advantages-block_title {
+    font-size: 7.5268817204vw;
+    max-height: 12.9032258065vw;
+    margin-bottom: 6.4516129032vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .advantages-block_title {
+    font-size: 3.8888888889vw;
+    max-height: 6.6666666667vw;
+    margin-bottom: 3.3333333333vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .advantages-block_title {
+    font-size: 56px;
+    max-height: 96px;
+    margin-bottom: 48px;
+  }
+}
+.advantages-block_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6.4vw;
+}
+@media screen and (min-width: 526px) {
+  .advantages-block_cards {
+    gap: 8.1989247312vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .advantages-block_cards {
+    gap: 4.2361111111vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .advantages-block_cards {
+    gap: 61px;
+  }
+}
+.advantages-block_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 82.9333333333vw;
+  gap: 4.2666666667vw;
+}
+@media screen and (min-width: 526px) {
+  .advantages-block_card {
+    width: 53.7634408602vw;
+    gap: 2.1505376344vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .advantages-block_card {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 27.7777777778vw;
+    gap: 1.1111111111vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .advantages-block_card {
+    width: 400px;
+    gap: 16px;
+  }
+}
+.advantages-block_card-icon {
+  min-width: 22.1333333333vw;
+  max-width: 22.1333333333vw;
+  min-height: 22.1333333333vw;
+  max-height: 22.1333333333vw;
+}
+@media screen and (min-width: 526px) {
+  .advantages-block_card-icon {
+    max-width: none;
+    min-width: 0px;
+    min-height: 11.1559139785vw;
+    max-height: 11.1559139785vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .advantages-block_card-icon {
+    min-height: 5.7638888889vw;
+    max-height: 5.7638888889vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .advantages-block_card-icon {
+    min-height: 83px;
+    max-height: 83px;
+  }
+}
+.advantages-block_card-text {
+  font-weight: 500;
+  line-height: 120%;
+  font-size: 4.2666666667vw;
+}
+@media screen and (min-width: 526px) {
+  .advantages-block_card-text {
+    font-size: 3.2258064516vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .advantages-block_card-text {
+    font-size: 1.6666666667vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .advantages-block_card-text {
+    font-size: 24px;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -397,6 +518,25 @@
 
 body {
   overflow-x: hidden;
+}
+
+.section {
+  padding: 8.5333333333vw 8.5333333333vw 10.1333333333vw;
+}
+@media screen and (min-width: 526px) {
+  .section {
+    padding: 4.3010752688vw 4.3010752688vw 5.1075268817vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .section {
+    padding: 8.6111111111vw calc(50% - 31.8055555556vw);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .section {
+    padding: 124px calc(50% - 458px);
+  }
 }
 
 .button {
@@ -433,5 +573,19 @@ body {
     border-radius: 33px;
     box-shadow: 0px 4px 64px 0px rgba(255, 222, 64, 0.59);
     font-size: 24px;
+  }
+}
+
+.hide {
+  display: none;
+}
+@media screen and (max-width: 920px) {
+  .hide-mob {
+    display: none;
+  }
+}
+@media screen and (min-width: 921px) {
+  .hide-desk {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
