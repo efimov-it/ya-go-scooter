@@ -256,7 +256,7 @@ body {
 .welcome-block_action {
   position: relative;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   left: 8.5333333333vw;
   right: 8.5333333333vw;
   bottom: 6.4vw;
@@ -617,6 +617,123 @@ body {
 @media screen and (min-width: 1441px) {
   .advantages-block_card-text {
     font-size: 24px;
+  }
+}
+
+.offer-block-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 526px) {
+  .offer-block-info {
+    margin-bottom: 17.2043010753vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .offer-block-info {
+    flex-direction: row;
+    margin-bottom: 8.8888888889vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .offer-block-info {
+    margin-bottom: 128px;
+  }
+}
+.offer-block-info_content {
+  position: relative;
+  z-index: 1;
+}
+.offer-block-info_content-title {
+  font-weight: 900;
+  line-height: 100%;
+  max-height: 40.2666666667vw;
+  margin-bottom: 8.5333333333vw;
+  letter-spacing: -0.1706666667vw;
+  font-size: 8.5333333333vw;
+}
+@media screen and (min-width: 526px) {
+  .offer-block-info_content-title {
+    width: 54.7043010753vw;
+    max-height: 30.376344086vw;
+    margin-bottom: 6.4516129032vw;
+    letter-spacing: -0.1290322581vw;
+    font-size: 6.4516129032vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .offer-block-info_content-title {
+    width: 28.2638888889vw;
+    max-height: 15.6944444444vw;
+    margin-bottom: 3.3333333333vw;
+    letter-spacing: -0.0666666667vw;
+    font-size: 3.3333333333vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .offer-block-info_content-title {
+    width: 407px;
+    max-height: 226px;
+    margin-bottom: 48px;
+    letter-spacing: -0.96px;
+    font-size: 48px;
+  }
+}
+.offer-block-info_content-text {
+  font-weight: 500;
+  line-height: 120%;
+  max-height: 28.2666666667vw;
+  font-size: 4.2666666667vw;
+}
+@media screen and (min-width: 526px) {
+  .offer-block-info_content-text {
+    width: 56.3172043011vw;
+    max-height: 21.7741935484vw;
+    font-size: 3.2258064516vw;
+  }
+}
+@media screen and (min-width: 921px) {
+  .offer-block-info_content-text {
+    width: 29.0972222222vw;
+    max-height: 11.25vw;
+    font-size: 1.6666666667vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .offer-block-info_content-text {
+    width: 419px;
+    max-height: 162px;
+    font-size: 24px;
+  }
+}
+.offer-block-info_img {
+  display: none;
+}
+@media screen and (min-width: 921px) {
+  .offer-block-info_img {
+    display: block;
+    position: absolute;
+    top: -16.7361111111vw;
+    left: calc(50% - 10.3472222222vw);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .offer-block-info_img {
+    top: -241px;
+    left: calc(50% - 149px);
+  }
+}
+@media screen and (min-width: 921px) {
+  .offer-block-info_img img {
+    width: 63.4722222222vw;
+    height: 62.0138888889vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .offer-block-info_img img {
+    width: 914px;
+    height: 893px;
   }
 }
 
