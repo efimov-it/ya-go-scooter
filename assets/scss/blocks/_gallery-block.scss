@@ -22,6 +22,10 @@
         font-weight: 900;
         line-height: 100%;
         
+        font-size: vw(32px, 375px);
+        letter-spacing: vw(-0.64px, 375px);
+        margin-bottom: vw(32px, 375px);
+        
         @media screen and (min-width: 526px) {
             font-size: vw(48px, 744px);
             letter-spacing: vw(-0.96px, 744px);
@@ -112,6 +116,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
 
         width: vw(48px, 375px);
         height: vw(48px, 375px);
@@ -127,6 +132,7 @@
 
         &:disabled {
             opacity: 0.5;
+            cursor: not-allowed;
         }
 
         &:active {
@@ -136,17 +142,12 @@
         
     &_control-icon {
         
+        width: vw(25.5px, 375px);
+        height: vw(22.1px, 375px);
 
         @media screen and (min-width: 526px) {
-
-        }
-
-        @media screen and (min-width: 921px) {
-
-        }
-
-        @media screen and (min-width: 1441px) {
-            
+            width: vw(25.5px, 744px);
+            height: vw(22.1px, 744px);
         }
 
         &__left {
@@ -187,7 +188,7 @@
         &__1 {
 
             left: vw(224px, 375px);
-            top: vw(200px, 375px);
+            top: vw(264px, 375px);
 
             @media screen and (min-width: 526px) {
                 left: vw(450px, 744px);
