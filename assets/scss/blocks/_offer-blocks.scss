@@ -164,12 +164,12 @@
             
             @media screen and (min-width: 921px) {
                 top: vw(-137px);
-                left: vw(50px);
+                left: calc(50% - #{vw(704px)});
             }
             
             @media screen and (min-width: 1441px) {
                 top: -137px;
-                left: 50px;
+                left: calc(50% - 704px);
             }
 
             img {
@@ -209,12 +209,12 @@
         
         @media screen and (min-width: 921px) {
             top: vw(-65px);
-            left: vw(180px);
+            left: calc(50% - #{vw(560px)});
         }
         
         @media screen and (min-width: 1441px) {
             top: -65px;
-            left: 180px;
+            left: calc(50% - 560px);
         }
 
         img {
