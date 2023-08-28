@@ -785,11 +785,13 @@ body {
 @media screen and (min-width: 921px) {
   .offer-block-info_img__action {
     top: -9.5138888889vw;
+    left: 3.4722222222vw;
   }
 }
 @media screen and (min-width: 1441px) {
   .offer-block-info_img__action {
     top: -137px;
+    left: 50px;
   }
 }
 .offer-block-info_img__action img {
@@ -829,13 +831,13 @@ body {
 @media screen and (min-width: 921px) {
   .offer-block-info_img-text {
     top: -4.5138888889vw;
-    left: 9.7222222222vw;
+    left: 12.5vw;
   }
 }
 @media screen and (min-width: 1441px) {
   .offer-block-info_img-text {
     top: -65px;
-    left: 140px;
+    left: 180px;
   }
 }
 .offer-block-info_img-text img {
