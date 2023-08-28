@@ -126,11 +126,13 @@
                 }
             
                 @media screen and (min-width: 921px) {
-                    
+                    width: vw(364px);
+                    height: vw(364px);
                 }
             
                 @media screen and (min-width: 1441px) {
-                    
+                    width: 364px;
+                    height: 364px;
                 }
             }
         }
@@ -156,11 +158,13 @@
                 }
             
                 @media screen and (min-width: 921px) {
-                    
+                    width: vw(524px);
+                    height: vw(592px);
                 }
             
                 @media screen and (min-width: 1441px) {
-                    
+                    width: 524px;
+                    height: 592px;
                 }
             }
         }
@@ -186,11 +190,13 @@
                 }
             
                 @media screen and (min-width: 921px) {
-                    
+                    width: vw(597px);
+                    height: vw(540px);
                 }
             
                 @media screen and (min-width: 1441px) {
-                    
+                    width: 597px;
+                    height: 540px;
                 }
             }
         }
